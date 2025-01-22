@@ -1,0 +1,9 @@
+torch
+python-dotenv
+huggingface_hub
+transformers
+bitsandbytes
+accelerate
+nvidia-pyindex
+safetensors
+numpy
