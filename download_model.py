@@ -1,6 +1,7 @@
 from huggingface_hub import snapshot_download
 from pathlib import Path
 from dotenv import load_dotenv
+import os
 
 # Load environment variables
 load_dotenv()
@@ -11,7 +12,6 @@ hf_token = os.getenv('HF_TOKEN')
 # Define the model repository and local storage path
 REPO_ID = "mistralai/Mamba-Codestral-7B-v0.1"
 LOCAL_DIR = Path.home().joinpath("mistral_models", "Mamba-Codestral-7B-v0.1")
-
 
 # Ensure the local directory exists
 LOCAL_DIR.mkdir(parents=True, exist_ok=True)
