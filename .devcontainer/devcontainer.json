@@ -1,20 +1,16 @@
 {
     "name": "Mamba-Codestral-DevContainer",
     "image": "pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel",
-
     "runArgs": [
         "--gpus",
         "all"
     ],
-
     "hostRequirements": {
         "gpu": true
     },
-
     "features": {
         "ghcr.io/devcontainers/features/git:1": {}
     },
-
     "customizations": {
         "vscode": {
             "extensions": [
@@ -30,8 +26,5 @@
             }
         }
     },
-
-    "postCreateCommand": "pip install -r requirements.txt",
-
-    "remoteUser": "vscode"
+    "postCreateCommand": "pip install -r requirements.txt"
 }
